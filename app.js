@@ -1,0 +1,3 @@
+document.querySelectorAll('#year').forEach(x=>x.textContent=new Date().getFullYear());
+const menu=document.querySelector('.menu');if(menu)menu.addEventListener('click',()=>{const n=document.querySelector('header nav');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='86px';n.style.left='0';n.style.right='0';n.style.padding='24px';n.style.background='#f4f1e9';n.style.flexDirection='column';n.style.alignItems='flex-start';});
+document.addEventListener('mousemove',e=>{const p=document.querySelector('.phone');if(!p||innerWidth<850)return;const x=(e.clientX/innerWidth-.5)*8,y=(e.clientY/innerHeight-.5)*8;p.style.transform=`translate(calc(-50% + ${x}px),calc(-50% + ${y}px)) rotate(${8+x/3}deg)`});
